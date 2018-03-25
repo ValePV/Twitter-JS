@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Twitter</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Overlock" rel="stylesheet">
+</head>
+<body>
+	<!-- Barra de menu-->
+	<header>
+		<nav class="Menu">
+			<h3><i class="fa fa-home" aria-hidden="true"></i>  Inicio</h3>
+			<h3><i class="fa fa-bell-o" aria-hidden="true"></i>  Notificaciones</h3>
+			<h3><i class="fa fa-envelope-open-o" aria-hidden="true"></i>  Mensajes</h3>
+			<img src="assets/img/twitter-logo.png">
+			<i class="fa fa-twitter-square" id = "twitt" aria-hidden="true"></i>
+			
+		</nav>
+
+	</header>
+	<!-- Section foto-->
+	<section class="center">
+		<form class="container">
+			<textarea class="txt" id="comment" placeholder="Añade un comentario" onKeyDown="contar()" onKeyUp="contar()"></textarea> 
+			<input type="text" id="count" class="contador" name="charact" value="140">
+			
+			<button type="button" id="btn" onclick="add()"><i class="fa fa-twitter" aria-hidden="true"></i>		TWEET</button>
+			
+			
+		</form>
+		<div>
+			<div id="cont"></div>
+			
+		</div>
+	 	
+	</section>
+	
+	
+	<!-- Script Files-->
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
